@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width"><title>https://philpolecat.github.io/starcat/</title><link rel="stylesheet" type="text/css" href="resource://content-accessible/viewsource.css"></head><body id="viewsource" style="tab-size: 4"><span id="line1"><span></span><span class="doctype">&lt;!DOCTYPE html&gt;</span><span>
+</span></span><span id="line2"><span></span><span>&lt;<span class="start-tag">html</span> <span class="attribute-name">lang</span>="<a class="attribute-value">en</a>"&gt;</span><span>
+</span></span><span id="line3"><span></span><span>&lt;<span class="start-tag">head</span>&gt;</span><span>
+</span></span><span id="line4"><span>  </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">charset</span>="<a class="attribute-value">UTF-8</a>"&gt;</span><span>
+</span></span><span id="line5"><span>  </span><span>&lt;<span class="start-tag">title</span>&gt;</span><span>Starcat Tour Dates</span><span>&lt;/<span class="end-tag">title</span>&gt;</span><span>
+</span></span><span id="line6"><span>  </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">viewport</a>" <span class="attribute-name">content</span>="<a class="attribute-value">width=device-width, initial-scale=1</a>"&gt;</span><span>
+</span></span><span id="line7"><span>
+</span></span><span id="line8"><span>  </span><span class="comment">&lt;!-- Social preview --&gt;</span><span>
+</span></span><span id="line9"><span>  </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">property</span>="<a class="attribute-value">og:type</a>" <span class="attribute-name">content</span>="<a class="attribute-value">website</a>"&gt;</span><span>
+</span></span><span id="line10"><span>  </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">property</span>="<a class="attribute-value">og:url</a>" <span class="attribute-name">content</span>="<a class="attribute-value">https://philpolecat.github.io/starcat/</a>"&gt;</span><span>
+</span></span><span id="line11"><span>  </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">property</span>="<a class="attribute-value">og:title</a>" <span class="attribute-name">content</span>="<a class="attribute-value">Starcat Tour Dates</a>"&gt;</span><span>
+</span></span><span id="line12"><span>  </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">property</span>="<a class="attribute-value">og:description</a>" <span class="attribute-name">content</span>="<a class="attribute-value">Come and see us!</a>"&gt;</span><span>
+</span></span><span id="line13"><span>  </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">property</span>="<a class="attribute-value">og:image</a>" <span class="attribute-name">content</span>="<a class="attribute-value">https://philpolecat.github.io/starcat/og-wide-safe.jpg</a>"&gt;</span><span>
+</span></span><span id="line14"><span>
+</span></span><span id="line15"><span>  </span><span>&lt;<span class="start-tag">style</span>&gt;</span><span>
+</span></span><span id="line16"><span>    body { margin:0; padding:16px; font-family: Arial, sans-serif; background:#fff; color:#111; }
+</span></span><span id="line17"><span>    .container { max-width: 900px; margin: 0 auto; }
+</span></span><span id="line18"><span>    .hero { width:100%; display:block; margin:0 0 20px 0; border-radius:6px; }
+</span></span><span id="line19"><span>    h1 { font-size:22px; margin:0 0 12px 0; }
+</span></span><span id="line20"><span>
+</span></span><span id="line21"><span>    .gig { padding:14px 0; border-bottom:1px solid #ddd; }
+</span></span><span id="line22"><span>    .gig-title { font-weight:bold; }
+</span></span><span id="line23"><span>    .gig-meta { font-size:14px; opacity:0.8; margin:4px 0 8px 0; }
+</span></span><span id="line24"><span>
+</span></span><span id="line25"><span>    .buy {
+</span></span><span id="line26"><span>      display:inline-block;
+</span></span><span id="line27"><span>      padding:10px 14px;
+</span></span><span id="line28"><span>      border:1px solid #111;
+</span></span><span id="line29"><span>      border-radius:6px;
+</span></span><span id="line30"><span>      text-decoration:none;
+</span></span><span id="line31"><span>      color:#111;
+</span></span><span id="line32"><span>      font-size:14px;
+</span></span><span id="line33"><span>    }
+</span></span><span id="line34"><span>    .buy:hover { background:#111; color:#fff; } 
+</span></span><span id="line35"><span>
+</span></span><span id="line36"><span>    .soldout {
+</span></span><span id="line37"><span>      display:inline-block;
+</span></span><span id="line38"><span>      padding:10px 14px;
+</span></span><span id="line39"><span>      border-radius:6px;
+</span></span><span id="line40"><span>      font-size:14px;
+</span></span><span id="line41"><span>      background:#eee;
+</span></span><span id="line42"><span>      color:#666;
+</span></span><span id="line43"><span>      border:1px solid #ccc;
+</span></span><span id="line44"><span>    }
+</span></span><span id="line45"><span>
+</span></span><span id="line46"><span>    /* PAST EVENTS: greyed out, link disabled */
+</span></span><span id="line47"><span>    .past {
+</span></span><span id="line48"><span>      opacity: 0.45;
+</span></span><span id="line49"><span>    }
+</span></span><span id="line50"><span>    .past .buy {
+</span></span><span id="line51"><span>      pointer-events: none;
+</span></span><span id="line52"><span>      border-color: #ccc;
+</span></span><span id="line53"><span>      color: #666;
+</span></span><span id="line54"><span>      background: none;
+</span></span><span id="line55"><span>      cursor: default;
+</span></span><span id="line56"><span>    }
+</span></span><span id="line57"><span>  </span><span>&lt;/<span class="end-tag">style</span>&gt;</span><span>
+</span></span><span id="line58"><span></span><span>&lt;/<span class="end-tag">head</span>&gt;</span><span>
+</span></span><span id="line59"><span>
+</span></span><span id="line60"><span></span><span>&lt;<span class="start-tag">body</span>&gt;</span><span>
+</span></span><span id="line61"><span>  </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">container</a>"&gt;</span><span>
+</span></span><span id="line62"><span>    </span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">class</span>="<a class="attribute-value">hero</a>" <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:https://philpolecat.github.io/starcat/starcat-banner.jpg">starcat-banner.jpg</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">Starcat</a>"&gt;</span><span>
+</span></span><span id="line63"><span>
+</span></span><span id="line64"><span>    </span><span>&lt;<span class="start-tag">h1</span>&gt;</span><span>Starcat Tour Dates</span><span>&lt;/<span class="end-tag">h1</span>&gt;</span><span>
+</span></span><span id="line65"><span>
+</span></span><span id="line66"><span>    </span><span class="comment">&lt;!-- PAST --&gt;</span><span>
+</span></span><span id="line67"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig past</a>"&gt;</span><span>
+</span></span><span id="line68"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-title</a>"&gt;</span><span>8 February 2026 — 100 Club</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line69"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-meta</a>"&gt;</span><span>London</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line70"><span>      </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">class</span>="<a class="attribute-value">buy</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:https://philpolecat.github.io/starcat/#">#</a>"&gt;</span><span>Buy tickets</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+</span></span><span id="line71"><span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line72"><span>
+</span></span><span id="line73"><span>    </span><span class="comment">&lt;!-- SOLD OUT --&gt;</span><span>
+</span></span><span id="line74"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig</a>"&gt;</span><span>
+</span></span><span id="line75"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-title</a>"&gt;</span><span>10 February 2026 — The Hope <span class="entity"><span>&amp;</span>amp;</span> Ruin</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line76"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-meta</a>"&gt;</span><span>Brighton</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line77"><span>      </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">soldout</a>"&gt;</span><span>Sold out</span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+</span></span><span id="line78"><span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line79"><span>
+</span></span><span id="line80"><span>    </span><span class="comment">&lt;!-- FUTURE --&gt;</span><span>
+</span></span><span id="line81"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig</a>"&gt;</span><span>
+</span></span><span id="line82"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-title</a>"&gt;</span><span>12 February 2026 — The Facebar</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line83"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-meta</a>"&gt;</span><span>Reading</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line84"><span>      </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">class</span>="<a class="attribute-value">buy</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:https://wegottickets.com/f/15395">https://wegottickets.com/f/15395</a>" <span class="attribute-name">target</span>="<a class="attribute-value">_blank</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">noopener</a>"&gt;</span><span>Buy tickets</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+</span></span><span id="line85"><span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line86"><span>
+</span></span><span id="line87"><span>    </span><span class="comment">&lt;!-- FUTURE --&gt;</span><span>
+</span></span><span id="line88"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig</a>"&gt;</span><span>
+</span></span><span id="line89"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-title</a>"&gt;</span><span>13 February 2026 — The Black Prince</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line90"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-meta</a>"&gt;</span><span>Northampton</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line91"><span>      </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">class</span>="<a class="attribute-value">buy</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:https://wegottickets.com/event/684461">https://wegottickets.com/event/684461</a>" <span class="attribute-name">target</span>="<a class="attribute-value">_blank</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">noopener</a>"&gt;</span><span>Buy tickets</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+</span></span><span id="line92"><span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line93"><span>
+</span></span><span id="line94"><span>    </span><span class="comment">&lt;!-- FUTURE --&gt;</span><span>
+</span></span><span id="line95"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig</a>"&gt;</span><span>
+</span></span><span id="line96"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-title</a>"&gt;</span><span>14 February 2026 — Thomas House (Matinee)</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line97"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-meta</a>"&gt;</span><span>Dublin</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line98"><span>      </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">class</span>="<a class="attribute-value">buy</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:https://www.eventbrite.ie/e/star-cat-matinee-tickets-1976631650476">https://www.eventbrite.ie/e/star-cat-matinee-tickets-1976631650476</a>" <span class="attribute-name">target</span>="<a class="attribute-value">_blank</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">noopener</a>"&gt;</span><span>Buy tickets</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+</span></span><span id="line99"><span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line100"><span>
+</span></span><span id="line101"><span>    </span><span class="comment">&lt;!-- SOLD OUT --&gt;</span><span>
+</span></span><span id="line102"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig</a>"&gt;</span><span>
+</span></span><span id="line103"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-title</a>"&gt;</span><span>14 February 2026 — Thomas House (Second show)</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line104"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-meta</a>"&gt;</span><span>Dublin</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line105"><span>      </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">class</span>="<a class="attribute-value">soldout</a>"&gt;</span><span>Sold out</span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span>
+</span></span><span id="line106"><span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line107"><span>
+</span></span><span id="line108"><span>    </span><span class="comment">&lt;!-- FUTURE --&gt;</span><span>
+</span></span><span id="line109"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig</a>"&gt;</span><span>
+</span></span><span id="line110"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-title</a>"&gt;</span><span>15 February 2026 — The Portland Arms</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line111"><span>      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">gig-meta</a>"&gt;</span><span>Cambridge</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line112"><span>      </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">class</span>="<a class="attribute-value">buy</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:https://aloud.seetickets.com/event/starcat-feat-slim-jim-phantom-/the-portland-arms/3560020">https://aloud.seetickets.com/event/starcat-feat-slim-jim-phantom-/the-portland-arms/3560020</a>" <span class="attribute-name">target</span>="<a class="attribute-value">_blank</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">noopener</a>"&gt;</span><span>Buy tickets</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+</span></span><span id="line113"><span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line114"><span>
+</span></span><span id="line115"><span>  </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line116"><span></span><span>&lt;/<span class="end-tag">body</span>&gt;</span><span>
+</span></span><span id="line117"><span></span><span>&lt;/<span class="end-tag">html</span>&gt;</span><span>
+</span></span><span id="line118"><span>
+</span></span><span id="line119"><span></span></span></body></html>
