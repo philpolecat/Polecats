@@ -30,13 +30,15 @@
     .page {
       max-width: 640px;
       margin: 0 auto;
-      padding: 0 16px 40px 16px;
+      padding: 24px 16px 40px 16px;
     }
 
     .banner {
-      width: 100%;
+      width: 90%;
+      max-width: 500px;
       display: block;
-      border-radius: 0 0 8px 8px;
+      margin: 0 auto;
+      border-radius: 12px;
     }
 
     .content {
@@ -84,6 +86,24 @@
       font-size: 13px;
       color: #888;
       margin-top: 12px;
+    }
+
+    /* Override Kit.com button to pink with black text */
+    .form-wrap [data-element="submit"] button,
+    .form-wrap button[type="submit"],
+    .form-wrap .formkit-submit,
+    .form-wrap .formkit-submit button {
+      background-color: #fa95b7 !important;
+      color: #111 !important;
+      border: none !important;
+      font-weight: bold !important;
+    }
+    .form-wrap [data-element="submit"] button:hover,
+    .form-wrap button[type="submit"]:hover,
+    .form-wrap .formkit-submit:hover,
+    .form-wrap .formkit-submit button:hover {
+      background-color: #f87da5 !important;
+      color: #000 !important;
     }
 
     .tour-link {
