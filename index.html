@@ -104,34 +104,36 @@
     Polecats Merch, T-Shirts &amp; Crepe Soul Vinyl &amp; CD →
   </a>
 
-  <div class="gig">
+  <div class="gig past" data-date="2026-04-17">
   <div class="gig-title">17 April 2026 — Rockabilly Rave</div>
   <div class="gig-meta">Great Yarmouth</div>
   <a class="buy"
   href="https://www.rockabillyrave.co.uk/booking/"
   target="_blank"
   rel="noopener">
-  Buy tickets
+  Past show
   </a>
-</div><div class="gig">
+</div>
+
+  <div class="gig past" data-date="2026-04-23">
   <div class="gig-title">23 April 2026 — The Brook</div>
   <div class="gig-meta">Southampton</div>
-  <a class="buy" href="https://www.ticketweb.uk/event/polecats-v-black-kat-boppers-the-brook-tickets/14742833"target="_blank" rel="noopener">Buy tickets</a>
+  <a class="buy" href="https://www.ticketweb.uk/event/polecats-v-black-kat-boppers-the-brook-tickets/14742833" target="_blank" rel="noopener">Past show</a>
   </div>
 
-  <div class="gig">
+  <div class="gig past" data-date="2026-04-26">
   <div class="gig-title">26 April 2026 — The Facebar</div>
   <div class="gig-meta">Reading</div>
-  <a class="buy" href="https://wegottickets.com/f/16687" target="_blank" rel="noopener">Buy tickets</a>
+  <a class="buy" href="https://wegottickets.com/f/16687" target="_blank" rel="noopener">Past show</a>
   </div>
-  <div class="gig">
+
+  <div class="gig" data-date="2026-05-02">
   <div class="gig-title">2 May 2026 — Thomas House</div>
   <div class="gig-meta">Dublin</div>
   <a class="buy" href="https://www.eventbrite.ie/e/the-polecats-live-in-dublin-tickets-1985528954552" target="_blank" rel="noopener">Buy tickets</a>
+  </div>
 
-</div>
-
-  <div class="gig">
+  <div class="gig" data-date="2026-05-03">
   <div class="gig-title">3 May 2026 — 100 Club</div>
   <div class="gig-meta">London</div>
   <a class="buy" href="https://wegottickets.com/f/16819" target="_blank" rel="noopener">Buy tickets</a>
@@ -142,4 +144,29 @@
   <h2>Never miss a Polecats gig</h2>
   <p>New dates announced all the time — get them straight to your inbox.</p>
   <script async data-uid="60961fe3bc" src="https://phil-polecat.kit.com/60961fe3bc/index.js"></script>
-  </di
+  </div>
+
+  </div>
+
+  <!-- Auto-grey out past gigs based on today's date.
+       Reads data-date="YYYY-MM-DD" on each .gig and adds .past + changes button text if the date is before today. -->
+  <script>
+  (function () {
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    var gigs = document.querySelectorAll('.gig[data-date]');
+    gigs.forEach(function (gig) {
+      var d = gig.getAttribute('data-date');
+      if (!d) return;
+      var gigDate = new Date(d + 'T00:00:00');
+      if (gigDate < today) {
+        gig.classList.add('past');
+        var btn = gig.querySelector('.buy');
+        if (btn) btn.textContent = 'Past show';
+      }
+    });
+  })();
+  </script>
+
+</body>
+</html>
